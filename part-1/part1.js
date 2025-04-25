@@ -80,3 +80,53 @@ function binarySearch(arr, target) {
 
 
      // number 7 problem factorial recursive 
+
+     function factorialDB(n){
+         if(n === 0) return 1;
+         return n * factorialDB(n -1)
+     }
+
+   //console.log( factorialDB([3, 1, 4,6, 2]))
+
+
+
+
+// problem number 8 linear Search  
+
+function linearSearch(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === target) return i;
+    }
+    return -1;
+  }
+
+//console.log(linearSearch([1,6,9,8]))
+
+//proleme 9 number Palindrome  
+function isPalindrome(str) {
+    let left = 0, right = str.length - 1;
+    while (left < right) {
+      if (str[left] !== str[right]) return false;
+      left++;
+      right--;
+    }
+    return true;
+  }
+
+console.log(isPalindrome([2, 6, 78, 65, 15, 12, 3, 8]))
+
+//proleme 9 number  merge tow sorted arrays  
+  function mergeArrays(arr1, arr2) {
+    let merged = [], i = 0, j = 0;
+    while (i < arr1.length && j < arr2.length) {
+      if (arr1[i] < arr2[j]) {
+        merged.push(arr1[i++]);
+      } else {
+        merged.push(arr2[j++]);
+      }
+    }
+    return merged.concat(arr1.slice(i)).concat(arr2.slice(j));
+  }
+
+
+  console.log(mergeArrays([]))
