@@ -113,7 +113,7 @@ function isPalindrome(str) {
     return true;
   }
 
-console.log(isPalindrome([2, 6, 78, 65, 15, 12, 3, 8]))
+//console.log(isPalindrome([2, 6, 78, 65, 15, 12, 3, 8]))
 
 //proleme 9 number  merge tow sorted arrays  
   function mergeArrays(arr1, arr2) {
@@ -129,4 +129,4 @@ console.log(isPalindrome([2, 6, 78, 65, 15, 12, 3, 8]))
   }
 
 
-  console.log(mergeArrays([]))
+ //console.log(mergeArrays([]))
