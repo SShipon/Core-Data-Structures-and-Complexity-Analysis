@@ -53,3 +53,30 @@ function binarySearch(arr, target) {
   }
 
     //console.log(  bubbleSort([1, 3, 5, 2, 9]))
+
+    function fibonacci(n) {
+        if (n <= 1) return n;
+        return fibonacci(n-1) + fibonacci(n-2);
+      }
+
+    //console.log( fibonacci([1, 3, 5, 2, 9]))
+
+
+    // number 6 problem Dynamic Programming 
+
+    function fibonacciDP(n){
+          let dp = [0, 1]
+          for(let i= 2; i<= n; i++){
+            dp[1]=  dp[i-1] + dp[i-2];
+          }
+          return dp[n]
+    }
+
+
+     //console.log( fibonacciDP([1, 3 ,7]))
+    
+
+
+
+
+     // number 7 problem factorial recursive 
